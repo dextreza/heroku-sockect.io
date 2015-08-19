@@ -1,0 +1,8 @@
+{
+  "name": "11-socket.io",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "socket.io": "^1.3.6"
+  }
+}
