@@ -1,6 +1,6 @@
 var http = require('http');
 var fs = require('fs');
-var puerto = process.port.ENV || 3000;
+var puerto = process.env.PORT || 3000;
 
 var servidor = http.createServer(function(req,res){
 
