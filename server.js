@@ -1,6 +1,5 @@
 var http = require('http');
 var fs = require('fs');
-var servName = 'localhost';
 var puerto = process.port.ENV || 3000;
 
 var servidor = http.createServer(function(req,res){
@@ -10,9 +9,9 @@ var servidor = http.createServer(function(req,res){
 		res.end(datos,'utf-8');
 	});
 
-}).listen(puerto,servName);
+}).listen(puerto);
 
-console.log('servidor funcionando en ' + servName + ':' + puerto);
+console.log('servidor funcionando en puerto:' + puerto);
 
 var io = require('socket.io').listen(servidor);
 
