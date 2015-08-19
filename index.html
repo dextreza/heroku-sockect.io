@@ -29,7 +29,7 @@
         	var parrafo = document.getElementById('parrafo');
         	var mensaje = document.getElementById('mensaje');
 
-        	var unSocket = io.connect('localhost:3000');
+        	var unSocket = io.connect('https://pseudochat.herokuapp.com');
 
 			unSocket.on('message',function(mensaje){
 				parrafo.innerHTML += '<p class="clearfix">message' + (mensaje.text) +'</p>';
